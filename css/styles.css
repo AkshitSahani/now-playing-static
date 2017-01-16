@@ -195,3 +195,70 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .site-nav{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 90px;
+
+  }
+  .site-nav-item{
+    float: none;
+    width: 100%;
+  }
+  .site-nav-list{
+    padding-top: 100px;
+    padding-left: 10px;
+  }
+  .site-logo{
+    position: fixed;
+    left:0.3rem;
+    top: 1rem;
+  }
+  article.movie {
+    float: right;
+    width: 90%;
+  }
+  footer {
+    clear: both;
+  }
+  .footer-nav{
+    display: inline;
+    float: right;
+    background-color: black;
+  }
+  .about{
+    display: inline-flex;
+    background-color: black;
+  }
+  .site-footer{
+    color: white;
+    background-color: black;
+  }
+  .movie-overview{
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /*.movie .movie-poster {
+    display: inline;
+  }*/
+  .movie:not(:nth-child(1)) .movie-poster{
+    display: inline;
+  }
+  .movie:not(:nth-child(1)) .movie-backdrop{
+    display: none;
+}
+  .movie:not(:nth-child(1)){
+    width: 30%;
+}
+
+.movie-overview{
+  display: none;
+}
+}
