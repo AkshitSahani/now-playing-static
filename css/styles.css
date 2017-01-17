@@ -258,7 +258,6 @@ figure {
     width: 30%;
 }
 
-.movie-overview{
+  .movie:not(:first-child) .movie-overview{
   display: none;
-}
 }
